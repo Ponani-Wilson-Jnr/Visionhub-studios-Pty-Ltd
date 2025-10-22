@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Work | VisionHub Studios</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('./picture/logo 2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(20, 20, 25, 0.6);
+      backdrop-filter: blur(10px);
+      padding: 10px 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #ffb400;
+      letter-spacing: 1px;
+    }
+
+    .back-home {
+      position: fixed;
+      top: 50%;
+      right: 25px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffb400;
+      padding: 12px 18px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      z-index: 1200;
+    }
+
+    .back-home:hover {
+      background: rgba(255, 180, 0, 0.25);
+      color: #fff;
+      transform: translateY(-50%) scale(1.05);
+    }
+
+    .back-home i {
+      margin-right: 8px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      text-align: center;
+      padding: 140px 20px 80px;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #ffb400;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #f2f2f2;
+      line-height: 1.7;
+    }
+
+    /* WORK GRID */
+    .work-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 60px 20px;
+      backdrop-filter: blur(6px);
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .work-item {
+      flex: 1 1 300px;
+      max-width: 320px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.4s ease, background 0.4s ease;
+      cursor: pointer;
+    }
+
+    .work-item:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 180, 0, 0.15);
+    }
+
+    .work-item img {
+      width: 100%;
+      display: block;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .work-item h3 {
+      color: #ffb400;
+      font-size: 1.2rem;
+      margin: 15px 0 10px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .work-item p {
+      color: #fff;
+      font-size: 0.95rem;
+      text-align: center;
+      padding: 0 15px 15px;
+    }
+
+    /* CTA SECTION */
+    .cta-section {
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 70px 20px;
+      backdrop-filter: blur(6px);
+    }
+
+    .cta-section h2 {
+      color: #ffb400;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-section p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    .cta-section a {
+      display: inline-block;
+      background: #ffb400;
+      color: #000;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .cta-section a:hover {
+      background: #ffc94d;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #fff;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(6px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .work-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .work-item {
+        width: 90%;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .cta-section h2 {
+        font-size: 1.6rem;
+      }
+
+      .back-home {
+        right: 10px;
+        padding: 10px 15px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Our Work</h1>
+  </header>
+
+  <a href="index.html" class="back-home">
+    <i class="fa fa-arrow-left"></i> Back to Home
+  </a>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Our Projects & Creations</h2>
+    <p>Take a look at some of the amazing work we've done across all our services. From video production to digital marketing, every project is crafted with creativity and precision.</p>
+  </section>
+
+  <!-- WORK GRID -->
+  <section class="work-grid">
+    <div class="work-item">
+      <img src="./picture/video.png" alt="Video Production">
+      <h3>Video Production</h3>
+      <p>Corporate and creative video projects that tell a story and capture attention.</p>
+    </div>
+
+    <div class="work-item">
+      <img src="./picture/TEMPLATES.jpg" alt="Media Template Pack">
+      <h3>Media Template Pack</h3>
+      <p>Custom templates for videos, graphics, and presentations ready to use.</p>
+    </div>
+
+    <div class="work-item">
+      <img src="./picture/pull up banner.jpg" alt="Branding Kit">
+      <h3>Branding Kit</h3>
+      <p>Complete branding solutions including logos, color palettes, and business assets.</p>
+    </div>
+
+    <div class="work-item">
+      <img src="./picture/Phone mockup0000.jpg" alt="Social Media Bundle">
+      <h3>Social Media Bundle</h3>
+      <p>Instagram, Facebook, and TikTok post designs tailored for engagement.</p>
+    </div>
+
+    <div class="work-item">
+      <img src="./picture/photography.jpg" alt="Photography Pack">
+      <h3>Photography Pack</h3>
+      <p>High-quality photography projects for brands, events, and products.</p>
+    </div>
+
+    <div class="work-item">
+      <img src="./picture/web.png" alt="Website Design">
+      <h3>Website Design</h3>
+      <p>Responsive and visually stunning websites created for brands and businesses.</p>
+    </div>
+
+    <div class="work-item">
+      <img src="./picture/Phone mockup0000.jpg" alt="Digital Marketing">
+      <h3>Digital Marketing</h3>
+      <p>SEO, ads, and online campaigns designed to boost your brand's presence.</p>
+    </div>
+
+    <div class="work-item">
+      <img src="./picture/back.jpg" alt="Content Creation">
+      <h3>Content Creation</h3>
+      <p>Engaging digital content for social media, blogs, and online platforms.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Want to See More?</h2>
+    <p>Contact us to discuss your project and let us help bring your ideas to life.</p>
+    <a href="contact-US.html">Get in Touch</a>
+  </section>
+
+  <footer>
+    <p>© 2025 VisionHub Studios. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

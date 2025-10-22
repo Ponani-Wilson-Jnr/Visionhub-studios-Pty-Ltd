@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | VisionHub Studios</title>
+  <link rel="stylesheet" href="about-us.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('./picture/logo 2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(20, 20, 25, 0.6);
+      backdrop-filter: blur(10px);
+      padding: 10px 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #ffb400;
+      letter-spacing: 1px;
+    }
+
+    .about-section {
+      text-align: center;
+      padding: 140px 20px 80px;
+      backdrop-filter: blur(4px);
+    }
+
+    .about-section h2 {
+      font-size: 2.5rem;
+      color: #ffb400;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .about-section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: #f2f2f2;
+      line-height: 1.7;
+    }
+
+    .mission-vision {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 80px;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+    }
+
+    .mission-vision div {
+      flex: 1 1 400px;
+      padding: 60px 40px;
+      text-align: center;
+      transition: transform 0.5s ease, background 0.5s ease;
+    }
+
+    .mission-vision div:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 180, 0, 0.1);
+    }
+
+    .mission-vision h3 {
+      font-size: 2rem;
+      color: #ffb400;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+    }
+
+    .mission-vision p {
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .skills-section {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(8px);
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .skills-section h3 {
+      font-size: 2.2rem;
+      color: #ffb400;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .skill-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 25px 40px;
+      transition: all 0.3s ease;
+    }
+
+    .skill-box:hover {
+      background: rgba(255, 180, 0, 0.15);
+      transform: scale(1.05);
+    }
+
+    .skill-box h4 {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #fff;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(6px);
+    }
+
+    /* Floating Back Button */
+    .back-home {
+      position: fixed;
+      top: 50%;
+      right: 25px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffb400;
+      padding: 12px 18px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      z-index: 1200;
+    }
+
+    .back-home:hover {
+      background: rgba(255, 180, 0, 0.25);
+      color: #fff;
+      transform: translateY(-50%) scale(1.05);
+    }
+
+    .back-home i {
+      margin-right: 8px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .mission-vision div {
+        padding: 40px 20px;
+      }
+
+      .about-section h2 {
+        font-size: 2rem;
+      }
+
+      .skills-section h3 {
+        font-size: 1.8rem;
+      }
+
+      .skill-box {
+        padding: 20px 25px;
+      }
+
+      .back-home {
+        right: 10px;
+        padding: 10px 15px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>About VisionHub Studios</h1>
+  </header>
+
+  <a href="index.html" class="back-home">
+    <i class="fa fa-arrow-left"></i> Back to Home
+  </a>
+
+  <section class="about-section">
+    <h2>Who We Are</h2>
+    <p>VisionHub Studios is a creative media hub dedicated to producing impactful visual experiences. 
+      We bring ideas to life through design, film, and storytelling — crafting meaningful connections 
+      between brands and audiences. Our team blends creativity, strategy, and technology to deliver 
+      exceptional content that inspires and engages.</p>
+  </section>
+
+  <section class="mission-vision">
+    <div class="mission">
+      <h3>MISSION</h3>
+      <p>To provide professional, high-quality media production services that empower creators and businesses 
+      to tell their stories visually and effectively. We aim to transform ideas into visual masterpieces 
+      that drive growth, connection, and creativity.</p>
+    </div>
+
+    <div class="vision">
+      <h3>VISION</h3>
+      <p>To become a leading creative studio recognized for excellence, innovation, and a deep passion for 
+      visual storytelling. We strive to shape the future of digital media by constantly pushing creative boundaries.</p>
+    </div>
+  </section>
+
+  <section class="skills-section">
+    <h3>OUR CORE VALUES</h3>
+    <div class="skills">
+      <div class="skill-box"><h4>Creative Thinking</h4></div>
+      <div class="skill-box"><h4>Innovation & Adaptability</h4></div>
+      <div class="skill-box"><h4>Technical Excellence</h4></div>
+      <div class="skill-box"><h4>Collaboration</h4></div>
+      <div class="skill-box"><h4>Integrity</h4></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 VisionHub Studios. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
