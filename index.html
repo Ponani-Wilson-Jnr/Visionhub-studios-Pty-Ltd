@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionHub Studios | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="homepage">
+
+<header>
+    <div class="logo">VisionHub Studios</div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="portfolio.html">Our Portfolio</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="career.html">Career</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="page-hero">
+
+    <!-- Social Media Icons -->
+    <div class="social-media">
+        <a href="https://facebook.com" target="_blank" class="social-btn">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-btn">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-btn">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-btn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:ponanujunior@gmail.com" class="social-btn">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+27681182271" class="social-btn">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 VisionHub Studios. All rights reserved.</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
